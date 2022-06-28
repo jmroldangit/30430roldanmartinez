@@ -1,22 +1,21 @@
-/* comentario en bloque se ingresa con ctrl+shift+A */
-let nombre = "Juan"; /* esta variable reserva un espacio para asignar el nombre en este caso. las comillas son para cadenas de texto. No se usan para los números o variables  */
-const edad = 15;/* Para reservar constantes . No va con comillas porque es una variable o number. Con comillas simples es un string*/
-var apoellido = "Ruiz";// no es recomendable usar
-console.log(nombre);
-console.log(typeof(edad));
-const PREMIOS = "5";// Son constantes. No cambian.
+let  entrada  =  prompt ( "Ingresar una letra" ) ;
+let  salida  =  entrada  +  " "  +  "ingresada" ;
+alerta ( salida ) ;
 
-prompt(ingrese su nombre);
- 
-let edad = 18;
-let permiso = > 18;
+let edad = 21;
 
-if(premiso){
-    console.log("Puedes entrar")
+if (edad < 16){
+  console.log("bienvenido joven");
+}else if(edad < 18){
+  console.log("bienvenido");
+}else if(edad === 19){
+  console.log("Bienvenido");
 }else{
-    console.log("No puedes entrar");
+  console.log("no tienes la edad para ingresar");
 }
-
-)
-
-
+let usuario = prompt("Ingrese un usuario").toLowerCase();
+while(usuario != "Juan"){
+  alert("Usuario incorrecto");
+  usuario = prompt("Ingrese un usuario");
+}
+alert("Bienvenido");
