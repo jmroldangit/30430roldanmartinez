@@ -34,8 +34,8 @@ function cotizadorSuscripcion(){
 }
 let productos = [];
 
-productos.push(new suscripcion("mensual", 1500));
-productos.push(new suscripcion("semanal", 1800));
+productos.push(new Suscripcion("mensual", 1500));
+productos.push(new Suscripcion("semanal", 1800));
 
 
 for(const item of productos){
@@ -49,3 +49,26 @@ for(const item of productos){
   }
 
 console.log(productos);
+
+let titulo = document.getElementById("titulo");
+titulo.innerText = "Suscripcion a novedades"
+console.log( titulo.innerText );
+
+let suscripcion = document.getElementsByClassName("suscripcion");
+console.log(suscripcion[0].innerHTML);
+console.log(suscripcion[1].innerHTML);
+console.log(suscripcion[2].innerHTML);
+
+//usuario practica
+
+let usuario;
+let usuarioStorage = sessionStorage.getItem("usuario");
+
+if(usuarioStorage){
+  let usuario = usuarioStorage;
+  let mensaje = `Bienvenid@ ${usuario}`;
+  alert(mensaje);
+}else{
+  usuario = prompt("Ingrese su nombre");
+  sessionStorage.setItem("usuario", usuario);
+}
