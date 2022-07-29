@@ -47,6 +47,13 @@ for(const item of productos){
     }
     
   }
+  Swal.fire({
+    position: 'top-center',
+    icon: 'success',
+    title: 'Ahora completa tus datos de contacto',
+    showConfirmButton: false,
+    timer: 4000
+  })
 
 console.log(productos);
 
@@ -58,6 +65,8 @@ let suscripcion = document.getElementsByClassName("suscripcion");
 console.log(suscripcion[0].innerHTML);
 console.log(suscripcion[1].innerHTML);
 console.log(suscripcion[2].innerHTML);
+
+
 
 //usuario practica
 
