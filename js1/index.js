@@ -39,12 +39,13 @@ productos.push(new Suscripcion("semanal", 1800));
 
 
 for(const item of productos){
-    if(item.nombre === "mensual"){
-        item.vender()
-    }
-    else if(item.nombre === "semanal"){
-        item.vender()
-    }
+  if(item.nombre === "mensual"){
+    item.vender()
+}
+else if(item.nombre === "semanal"){
+    item.vender()
+}
+
     
   }
   Swal.fire({
@@ -58,7 +59,7 @@ for(const item of productos){
 console.log(productos);
 
 let titulo = document.getElementById("titulo");
-titulo.innerText = "Suscripcion a novedades"
+titulo.innerText = "Suscripcion a novedades";
 console.log( titulo.innerText );
 
 let suscripcion = document.getElementsByClassName("suscripcion");
@@ -68,7 +69,7 @@ console.log(suscripcion[2].innerHTML);
 
 
 
-//usuario practica
+/* //usuario practica
 
 let usuario;
 let usuarioStorage = sessionStorage.getItem("usuario");
@@ -80,4 +81,4 @@ if(usuarioStorage){
 }else{
   usuario = prompt("Ingrese su nombre");
   sessionStorage.setItem("usuario", usuario);
-}
+} */
