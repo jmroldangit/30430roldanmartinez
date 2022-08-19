@@ -1,0 +1,4 @@
+[
+    {"nombre":"Suscripcion Semanal", "semanal": 1800,"id":1 },
+    {"nombre":"Suscripcion Mensual", "mensual": 1500,"id":2 }
+]
