@@ -1,4 +1,4 @@
 [
-    {"nombre":"Suscripcion Semanal", "semanal": 1800,"id":1 },
-    {"nombre":"Suscripcion Mensual", "mensual": 1500,"id":2 }
+    {"nombre":"Suscripcion Semanal","precio":1800,"id":1 },
+    {"nombre":"Suscripcion Mensual","precio":1500,"id":2 }
 ]

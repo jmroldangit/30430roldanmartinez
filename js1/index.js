@@ -46,8 +46,7 @@ else if(item.nombre === "semanal"){
     item.vender()
 }
 
-    
-  }
+}
   Swal.fire({
     position: 'top-center',
     icon: 'success',
@@ -59,31 +58,45 @@ else if(item.nombre === "semanal"){
 console.log(productos);
 
 let titulo = document.getElementById("titulo");
+
 titulo.innerText = "Suscripcion a novedades";
 console.log(titulo.innerText);
 
 let suscripcion = document.getElementsByClassName("suscripcion");
+
 console.log(suscripcion[0].innerHTML);
 console.log(suscripcion[1].innerHTML);
 console.log(suscripcion[2].innerHTML);
 
 const lista = document.getElementById("listado");
-fetch=("./data.json")
-.then(response => response.json())
-.then(productos => {
-  productos.forEach(producto => {
-    const li = document.createElement("li");
-    li.innerHTML = `
-    <h4>${producto.nombre}</h4>
-    <p>${producto.precio}</p>
-    <p>codigo: ${producto.id}<p/>
-    <hr />
-  `;
-  lista.append(li);
 
-  });
+	fetch("./data.json")
 
-  
+  		.then(response => response.json())
+
+  		.then(productos => {
+
+    		productos.forEach(producto => {
+
+      			const li = document.createElement("li");
+
+      			li.innerHTML = `
+
+        			<h4>${producto.nombre}</h4>
+
+        			<p>${producto.precio}</p>
+
+        			<p>codigo: ${producto.id}<p/>
+
+        			<hr />
+
+      			`;
+
+      			lista.append(li);
+
+    		})
+
+  	});
 
 
 /* //usuario practica

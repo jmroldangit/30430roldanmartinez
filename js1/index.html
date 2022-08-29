@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<h2 id="titulo">Pagina de Suscripcion</h2>
+<h2 class="titulo" id="titulo">Pagina de Suscripcion</h2>
 
 <body>
-    <main>
+    <main class="body">
         <section>
         <div>
             <form id="formulario">
@@ -22,7 +22,7 @@
             </form>           
 
         </div>
-        <div>
+        <div class="suscripcion">
             <form id="tipoSuscripcion">
                 <input type="radio" name="suscripcion" value="1"/>Semanal
                 <input type="radio" name="suscripcion" value="2"/>Mensual
@@ -31,6 +31,8 @@
 
         </div>
     </section>
+
+    <ul id="listado"> </ul>
 
     </main>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
